@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détail Produit</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #0d0d0d; color: #e5e5e5; }
+  </style>
+</head>
+<body class="font-sans">
+
+  <header class="w-full py-6 px-4 md:px-10 bg-black flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-white">NLS</h1>
+    <nav class="space-x-4 text-gray-300 text-sm md:text-base">
+      <a href="index.html#vitrine" class="hover:text-purple-400">Retour à la vitrine</a>
+    </nav>
+  </header>
+
+  <main class="py-12 px-4 md:px-10 max-w-4xl mx-auto">
+    <div id="product-container" class="bg-gray-900 rounded-2xl p-6 shadow-xl">
+      <!-- Le contenu sera injecté ici par JS -->
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get("id");
+
+    const products = {
+      1: {
+        title: "Air Force Galaxy",
+        description: "Peinture irisée avec dégradé mauve/noir",
+        image: "IMG/Screenshot 2025-05-10 at 16.04.54.png",
+        price: "170 €"
+      },
+      2: {
+        title: "Jordan Graffiti",
+        description: "Tag urbain sur cuir noir mat",
+        image: "IMG/Screenshot 2025-05-10 at 12.04.01.png",
+        price: "180 €"
+      },
+      3: {
+        title: "Vans Flame",
+        description: "Effet feu stylisé sur base noire",
+        image: "https://via.placeholder.com/600x400",
+        price: "160 €"
+      }
+    };
+
+    const product = products[productId];
+
+    if (product) {
+      document.getElementById("product-container").innerHTML = `
+        <img src="${product.image}" alt="${product.title}" class="w-full rounded-xl mb-6">
+        <h2 class="text-3xl font-bold mb-2 text-white">${product.title}</h2>
+        <p class="text-gray-400 mb-4">${product.description}</p>
+        <p class="text-purple-400 font-semibold text-xl mb-6">Prix : ${product.price}</p>
+        <a href="https://wa.me/32xxxxxxxxx?text=Je veux commander la ${product.title}" 
+           class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl transition">
+          Commander via WhatsApp
+        </a>
+      `;
+    } else {
+      document.getElementById("product-container").innerHTML = `<p class="text-red-400">Produit non trouvé.</p>`;
+    }
+  </script>
+</body>
+</html>
