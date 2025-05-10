@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Shoes - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #e5e5e5;
+        }
+        .gradient-purple {
+            background: linear-gradient(135deg, #6b21a8, #9333ea);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <header class="w-full py-6 px-4 md:px-10 bg-black flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">CustomKickz</h1>
+        <nav class="space-x-4 text-gray-300 text-sm md:text-base">
+            <a href="#vitrine" class="hover:text-purple-400">Vitrine</a>
+            <a href="#reservation" class="hover:text-purple-400">Réserver</a>
+        </nav>
+    </header>
+
+    <!-- Vitrine -->
+    <section id="vitrine" class="py-12 px-4 md:px-10">
+        <h2 class="text-3xl font-bold text-center text-white mb-10">Exemples de customs</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+            <div class="rounded-xl overflow-hidden shadow-lg bg-gray-900">
+                <img src="https://via.placeholder.com/600x400" alt="Custom 1" class="w-full object-cover">
+                <div class="p-4">
+                    <h3 class="text-white font-semibold">Air Force Galaxy</h3>
+                    <p class="text-gray-400 text-sm mt-1">Peinture irisée avec dégradé mauve/noir</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg bg-gray-900">
+                <img src="https://via.placeholder.com/600x400" alt="Custom 2" class="w-full object-cover">
+                <div class="p-4">
+                    <h3 class="text-white font-semibold">Jordan Graffiti</h3>
+                    <p class="text-gray-400 text-sm mt-1">Tag urbain sur cuir noir mat</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg bg-gray-900">
+                <img src="https://via.placeholder.com/600x400" alt="Custom 3" class="w-full object-cover">
+                <div class="p-4">
+                    <h3 class="text-white font-semibold">Vans Flame</h3>
+                    <p class="text-gray-400 text-sm mt-1">Effet feu stylisé sur base noire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Avis Clients -->
+        <section class="py-12 px-4 md:px-10 bg-gray-900">
+            <h2 class="text-3xl font-bold text-center text-white mb-10">Avis de nos clients</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-black rounded-xl p-6 shadow-lg text-center">
+                    <img src="https://via.placeholder.com/80" class="mx-auto rounded-full mb-4" alt="Client 1">
+                    <p class="text-white font-semibold">Sarah B.</p>
+                    <p class="text-yellow-400 text-sm mb-2">★★★★★</p>
+                    <p class="text-gray-400 text-sm">Magnifique résultat, super réactivité ! Je recommande à fond !</p>
+                </div>
+                <div class="bg-black rounded-xl p-6 shadow-lg text-center">
+                    <img src="https://via.placeholder.com/80" class="mx-auto rounded-full mb-4" alt="Client 2">
+                    <p class="text-white font-semibold">Léo M.</p>
+                    <p class="text-yellow-400 text-sm mb-2">★★★★☆</p>
+                    <p class="text-gray-400 text-sm">Design très propre, petit délai mais ça valait le coup.</p>
+                </div>
+                <div class="bg-black rounded-xl p-6 shadow-lg text-center">
+                    <img src="https://via.placeholder.com/80" class="mx-auto rounded-full mb-4" alt="Client 3">
+                    <p class="text-white font-semibold">Inès K.</p>
+                    <p class="text-yellow-400 text-sm mb-2">★★★★★</p>
+                    <p class="text-gray-400 text-sm">Service au top, je referai une paire sans hésiter.</p>
+                </div>
+            </div>
+        </section>
+
+
+            <!-- Tarifs -->
+    <section class="py-12 px-4 md:px-10">
+        <h2 class="text-3xl font-bold text-center text-white mb-10">Tarifs</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 rounded-xl p-6 text-center shadow-lg">
+                <h3 class="text-xl font-semibold text-white mb-2">Custom simple</h3>
+                <p class="text-gray-400 text-sm mb-4">Couleurs unies, détails sobres</p>
+                <p class="text-purple-400 text-2xl font-bold">80€</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-6 text-center shadow-lg">
+                <h3 class="text-xl font-semibold text-white mb-2">Custom intermédiaire</h3>
+                <p class="text-gray-400 text-sm mb-4">Dégradés, éléments graphiques</p>
+                <p class="text-purple-400 text-2xl font-bold">120€</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-6 text-center shadow-lg">
+                <h3 class="text-xl font-semibold text-white mb-2">Custom complexe</h3>
+                <p class="text-gray-400 text-sm mb-4">Personnages, thèmes sur mesure</p>
+                <p class="text-purple-400 text-2xl font-bold">160€+</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Réservation -->
+    <section id="reservation" class="py-12 px-4 md:px-10">
+        <div class="w-full max-w-2xl mx-auto bg-black rounded-2xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">Réserve ta custom</h2>
+            <form action="/submit" method="POST" enctype="multipart/form-data" class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Nom complet</label>
+                    <input type="text" name="nom" required class="w-full rounded-xl p-3 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Adresse e-mail</label>
+                    <input type="email" name="email" required class="w-full rounded-xl p-3 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Date souhaitée</label>
+                    <input type="date" name="date" required class="w-full rounded-xl p-3 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Téléverse une photo de ta chaussure</label>
+                    <input type="file" name="photo" accept="image/*" required class="w-full text-white">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Détails ou demande spéciale</label>
+                    <textarea name="message" rows="4" class="w-full rounded-xl p-3 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="w-full py-3 px-6 font-semibold rounded-xl gradient-purple text-white shadow-md hover:opacity-90 transition duration-300">
+                        Envoyer la demande
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-sm text-gray-500 py-4">
+        &copy; 2025 CustomKickz. Tous droits réservés.
+    </footer>
+</body>
+</html>
