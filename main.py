@@ -14,7 +14,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="static")
 
 # Route racine qui renvoie ta page HTML (ici on utilise un template Jinja, tu peux aussi envoyer un fichier statique)
-@app.get("/", response_class=HTMLResponse)
+@app.get("/")
 async def read_root(request: Request):
     return templates.TemplateResponse("main.html", {"request": request})
 
