@@ -41,3 +41,7 @@ async def submit_form(
     # Ici, tu peux ajouter la logique d'enregistrement en base, envoi email, etc.
     # Pour l'exemple, on redirige vers la page d'accueil après soumission
     return RedirectResponse(url="/", status_code=303)
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
