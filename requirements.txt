@@ -1,2 +1,2 @@
 fastapi[standard]
-uvicorn[standard]
+uvicorn
