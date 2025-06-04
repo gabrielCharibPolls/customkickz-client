@@ -1,4 +1,3 @@
-@@ -0,0 +1,14 @@
 # Étape 1 : image de base avec Python
 FROM python:3.11-slim
 
