@@ -3,6 +3,10 @@ import os
 
 app = FastAPI()
 
+# Serve le dossier static
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Accès direct à main.html via /
 @app.get("/")
 def read_root():
     return {"message": "Hello from Railway"}
